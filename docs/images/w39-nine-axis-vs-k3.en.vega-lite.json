@@ -1,0 +1,338 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": "Nine-axis duel: step-5-preview vs k3 @ Kimi official coding (W38)",
+  "fontSize": 15,
+  "anchor": "start",
+  "subtitle": "15 vs 17 on the board, but the shape is nearly mirrored — the only material gaps are attribution (this lane wins) and vision (this lane loses)",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "width": 470,
+ "height": 300,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12.5,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "axis": "coding",
+      "lane": "k3",
+      "v": 0.958
+     },
+     {
+      "axis": "coding",
+      "lane": "step-5-preview",
+      "v": 0.958
+     },
+     {
+      "axis": "delivery",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "delivery",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "attribution",
+      "lane": "k3",
+      "v": 0.667
+     },
+     {
+      "axis": "attribution",
+      "lane": "step-5-preview",
+      "v": 0.8
+     },
+     {
+      "axis": "ops",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "ops",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "req-drift",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "req-drift",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "ui",
+      "lane": "k3",
+      "v": 0.0
+     },
+     {
+      "axis": "ui",
+      "lane": "step-5-preview",
+      "v": 0.0
+     },
+     {
+      "axis": "vision",
+      "lane": "k3",
+      "v": 0.778
+     },
+     {
+      "axis": "vision",
+      "lane": "step-5-preview",
+      "v": 0.222
+     },
+     {
+      "axis": "review",
+      "lane": "k3",
+      "v": 0.556
+     },
+     {
+      "axis": "review",
+      "lane": "step-5-preview",
+      "v": 0.556
+     },
+     {
+      "axis": "defense",
+      "lane": "k3",
+      "v": 0.389
+     },
+     {
+      "axis": "defense",
+      "lane": "step-5-preview",
+      "v": 0.375
+     }
+    ]
+   },
+   "transform": [
+    {
+     "pivot": "lane",
+     "value": "v",
+     "groupby": [
+      "axis"
+     ]
+    }
+   ],
+   "mark": {
+    "type": "rule",
+    "color": "#cbd5e1",
+    "strokeWidth": 2
+   },
+   "encoding": {
+    "y": {
+     "field": "axis",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "coding",
+       "delivery",
+       "attribution",
+       "ops",
+       "req-drift",
+       "ui",
+       "vision",
+       "review",
+       "defense"
+      ]
+     },
+     "axis": {
+      "title": null,
+      "labelFontSize": 12.5
+     }
+    },
+    "x": {
+     "field": "k3",
+     "type": "quantitative"
+    },
+    "x2": {
+     "field": "step-5-preview"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "axis": "coding",
+      "lane": "k3",
+      "v": 0.958
+     },
+     {
+      "axis": "coding",
+      "lane": "step-5-preview",
+      "v": 0.958
+     },
+     {
+      "axis": "delivery",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "delivery",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "attribution",
+      "lane": "k3",
+      "v": 0.667
+     },
+     {
+      "axis": "attribution",
+      "lane": "step-5-preview",
+      "v": 0.8
+     },
+     {
+      "axis": "ops",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "ops",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "req-drift",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "req-drift",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "ui",
+      "lane": "k3",
+      "v": 0.0
+     },
+     {
+      "axis": "ui",
+      "lane": "step-5-preview",
+      "v": 0.0
+     },
+     {
+      "axis": "vision",
+      "lane": "k3",
+      "v": 0.778
+     },
+     {
+      "axis": "vision",
+      "lane": "step-5-preview",
+      "v": 0.222
+     },
+     {
+      "axis": "review",
+      "lane": "k3",
+      "v": 0.556
+     },
+     {
+      "axis": "review",
+      "lane": "step-5-preview",
+      "v": 0.556
+     },
+     {
+      "axis": "defense",
+      "lane": "k3",
+      "v": 0.389
+     },
+     {
+      "axis": "defense",
+      "lane": "step-5-preview",
+      "v": 0.375
+     }
+    ]
+   },
+   "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 120
+   },
+   "encoding": {
+    "y": {
+     "field": "axis",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "coding",
+       "delivery",
+       "attribution",
+       "ops",
+       "req-drift",
+       "ui",
+       "vision",
+       "review",
+       "defense"
+      ]
+     }
+    },
+    "x": {
+     "field": "v",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -0.05,
+       1.05
+      ]
+     },
+     "axis": {
+      "title": "completion (pin-pass rate)",
+      "values": [
+       0,
+       0.25,
+       0.5,
+       0.75,
+       1.0
+      ],
+      "grid": true
+     }
+    },
+    "color": {
+     "field": "lane",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "k3",
+       "step-5-preview"
+      ],
+      "range": [
+       "#94a3b8",
+       "#0e7490"
+      ]
+     },
+     "legend": {
+      "title": null,
+      "orient": "bottom",
+      "offset": 8
+     }
+    },
+    "tooltip": [
+     {
+      "field": "lane"
+     },
+     {
+      "field": "v"
+     }
+    ]
+   }
+  }
+ ]
+}

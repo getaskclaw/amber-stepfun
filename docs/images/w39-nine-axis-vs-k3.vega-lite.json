@@ -1,0 +1,338 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": "九轴对照：step-5-preview vs k3 @ Kimi 官方 coding（W38）",
+  "fontSize": 15,
+  "anchor": "start",
+  "subtitle": "总分 15 对 17，但形状几乎镜像——唯一实质差异在归因（本仓胜）与视觉（本仓败）两轴",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "width": 470,
+ "height": 300,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12.5,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "axis": "编码",
+      "lane": "k3",
+      "v": 0.958
+     },
+     {
+      "axis": "编码",
+      "lane": "step-5-preview",
+      "v": 0.958
+     },
+     {
+      "axis": "交付",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "交付",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "归因",
+      "lane": "k3",
+      "v": 0.667
+     },
+     {
+      "axis": "归因",
+      "lane": "step-5-preview",
+      "v": 0.8
+     },
+     {
+      "axis": "运维",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "运维",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "需求",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "需求",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "UI",
+      "lane": "k3",
+      "v": 0.0
+     },
+     {
+      "axis": "UI",
+      "lane": "step-5-preview",
+      "v": 0.0
+     },
+     {
+      "axis": "视觉",
+      "lane": "k3",
+      "v": 0.778
+     },
+     {
+      "axis": "视觉",
+      "lane": "step-5-preview",
+      "v": 0.222
+     },
+     {
+      "axis": "审查",
+      "lane": "k3",
+      "v": 0.556
+     },
+     {
+      "axis": "审查",
+      "lane": "step-5-preview",
+      "v": 0.556
+     },
+     {
+      "axis": "防御",
+      "lane": "k3",
+      "v": 0.389
+     },
+     {
+      "axis": "防御",
+      "lane": "step-5-preview",
+      "v": 0.375
+     }
+    ]
+   },
+   "transform": [
+    {
+     "pivot": "lane",
+     "value": "v",
+     "groupby": [
+      "axis"
+     ]
+    }
+   ],
+   "mark": {
+    "type": "rule",
+    "color": "#cbd5e1",
+    "strokeWidth": 2
+   },
+   "encoding": {
+    "y": {
+     "field": "axis",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "编码",
+       "交付",
+       "归因",
+       "运维",
+       "需求",
+       "UI",
+       "视觉",
+       "审查",
+       "防御"
+      ]
+     },
+     "axis": {
+      "title": null,
+      "labelFontSize": 12.5
+     }
+    },
+    "x": {
+     "field": "k3",
+     "type": "quantitative"
+    },
+    "x2": {
+     "field": "step-5-preview"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "axis": "编码",
+      "lane": "k3",
+      "v": 0.958
+     },
+     {
+      "axis": "编码",
+      "lane": "step-5-preview",
+      "v": 0.958
+     },
+     {
+      "axis": "交付",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "交付",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "归因",
+      "lane": "k3",
+      "v": 0.667
+     },
+     {
+      "axis": "归因",
+      "lane": "step-5-preview",
+      "v": 0.8
+     },
+     {
+      "axis": "运维",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "运维",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "需求",
+      "lane": "k3",
+      "v": 1.0
+     },
+     {
+      "axis": "需求",
+      "lane": "step-5-preview",
+      "v": 1.0
+     },
+     {
+      "axis": "UI",
+      "lane": "k3",
+      "v": 0.0
+     },
+     {
+      "axis": "UI",
+      "lane": "step-5-preview",
+      "v": 0.0
+     },
+     {
+      "axis": "视觉",
+      "lane": "k3",
+      "v": 0.778
+     },
+     {
+      "axis": "视觉",
+      "lane": "step-5-preview",
+      "v": 0.222
+     },
+     {
+      "axis": "审查",
+      "lane": "k3",
+      "v": 0.556
+     },
+     {
+      "axis": "审查",
+      "lane": "step-5-preview",
+      "v": 0.556
+     },
+     {
+      "axis": "防御",
+      "lane": "k3",
+      "v": 0.389
+     },
+     {
+      "axis": "防御",
+      "lane": "step-5-preview",
+      "v": 0.375
+     }
+    ]
+   },
+   "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 120
+   },
+   "encoding": {
+    "y": {
+     "field": "axis",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "编码",
+       "交付",
+       "归因",
+       "运维",
+       "需求",
+       "UI",
+       "视觉",
+       "审查",
+       "防御"
+      ]
+     }
+    },
+    "x": {
+     "field": "v",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       -0.05,
+       1.05
+      ]
+     },
+     "axis": {
+      "title": "完成度（钉过率）",
+      "values": [
+       0,
+       0.25,
+       0.5,
+       0.75,
+       1.0
+      ],
+      "grid": true
+     }
+    },
+    "color": {
+     "field": "lane",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "k3",
+       "step-5-preview"
+      ],
+      "range": [
+       "#94a3b8",
+       "#0e7490"
+      ]
+     },
+     "legend": {
+      "title": null,
+      "orient": "bottom",
+      "offset": 8
+     }
+    },
+    "tooltip": [
+     {
+      "field": "lane"
+     },
+     {
+      "field": "v"
+     }
+    ]
+   }
+  }
+ ]
+}
