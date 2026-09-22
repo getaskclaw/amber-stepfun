@@ -46,6 +46,7 @@ The same model on the same endpoint can score differently across runs — infere
 | Issue | Content | Verdict |
 |---|---|---|
 | [2026-W39](results/2026-W39.md) | step-5-preview @ stepfun plan endpoint, full-library debut | case-level 15/23; ops 6/6, req-drift all variants, coding 5/6 (hard discriminator perfect), delivery perfect; attribution axis beats the anchor; review half, verify 0/3, vision −2, ui-build void; endpoint reports no reasoning burn |
+| [2026-W38 correction notice](results/2026-W38-correction.en.md) | W38 full-library review: 0 cells reversed · 4 held here | 4 W39 debut-matrix cells held; the 15/23 headline may move up if exonerated |
 
 ## Disclaimer
 
