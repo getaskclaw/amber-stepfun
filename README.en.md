@@ -5,11 +5,13 @@ Weekly AMBER measurement of StepFun's new flagship `step-5-preview` as served on
 
 ## What this is
 
-- Every issue `results/YYYY-Www.md`: same cases, same harness, full-library run (23 cases / 26 papers).
-- A fixed report shape: library size + hashes, per-case pass/fail, terminal states, token usage and wall clock, environment fingerprint, and qualitative verdicts written to evidence discipline.
-- Cases, oracles, transcripts and intermediate artifacts are **never published** (see "Publishing rules" below).
+- A 'lane' is one vendor's shop/API for a model name; a 'case' is one task, a 'run' is one sitting (a multi-variant case has several runs).
+
+- Every issue `results/YYYY-Www.md`: same cases, same harness (the program that runs the exam and scores it), full-library run (23 cases / 26 papers).
+- A fixed report shape: library size + hashes, per-case pass/fail, terminal states (how the run process exited), token usage and wall clock, environment fingerprint, and qualitative verdicts written to evidence discipline.
+- Cases, oracles, transcripts (full answer logs)s and intermediate artifacts are **never published** (see "Publishing rules" below).
 - Sister repos: [amber-gpt](https://github.com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama), [amber-devin](https://github.com/getaskclaw/amber-devin), [amber-deepseek](https://github.com/getaskclaw/amber-deepseek), [amber-commandcode](https://github.com/getaskclaw/amber-commandcode), [amber-opencode](https://github.com/getaskclaw/amber-opencode), [amber-workbuddy](https://github.com/getaskclaw/amber-workbuddy), [amber-kimi](https://github.com/getaskclaw/amber-kimi), [amber-doubao](https://github.com/getaskclaw/amber-doubao), [amber-goldenpotato](https://github.com/getaskclaw/amber-goldenpotato).
-- AMBER is an agentic real-world task library (build / ops / review / vision / requirement-drift). The spec and case-forging tooling live in [getaskclaw/amber](https://github.com/getaskclaw/amber); the cases themselves are private.
+- AMBER is an agentic real-world task library (build / ops / review / vision / requirement-drift (the requirements change mid-task)). The spec and case-forging tooling live in [getaskclaw/amber](https://github.com/getaskclaw/amber); the cases themselves are private.
 
 ## Lane notes (what is special about this repo)
 
@@ -31,7 +33,7 @@ stepfun plan endpoint, requested high band (**reasoning burn unverifiable**), sa
 
 1. Publish only: scores and aggregates, token usage, speed, qualitative verdicts.
 2. Never publish: case content, oracles/scorers, transcripts, candidate workspaces, any intermediate artifact that can reconstruct a case, endpoint credentials.
-3. Every issue pins: model id, effort band, date (UTC), harness version, per-case content hash (bundle_sha). The hashes are checkable against [amber](https://github.com/getaskclaw/amber)'s public hash index, self-proving the library did not change.
+3. Every issue pins: model id, effort band (the thinking-effort setting), date (UTC), harness version, per-case content hash (bundle_sha (per-case content-hash fingerprint)). The hashes are checkable against [amber](https://github.com/getaskclaw/amber)'s public hash index, self-proving the library did not change.
 4. Case numbers and case structure are private: public results reference cases only by stable alias (A-xxxxxxxx, hash-derived) plus bundle hash. Internal case ids, variant names and case descriptions never appear.
 5. Tone: this is measurement of a public endpoint, not an attack on any vendor. Let the data speak; keep the wording restrained.
 
