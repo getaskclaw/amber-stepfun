@@ -1,5 +1,7 @@
 # 2026-W38 correction notice — amber-stepfun: additive correction to published scores
 
+> Week-label correction: the full test belongs to W38. [New notice](2026-W38-correction-20260923.en.md). The text below is the earlier review and is otherwise unchanged.
+
 > 中文版:[2026-W38-correction.md](2026-W38-correction.md)
 
 **Summary**: this notice rewrites no past issue; it **appends** one set of adjudicated results. AMBER ran a full-library review of its published 2026-09 scores: some failures previously counted were adjudged a **bench-side** problem rather than a model-capability problem, and for some papers the evidence was incomplete and the conclusion stays open. This notice lists both classes cell by cell — the **reversals** and the **holds** — with the review method and the guardrails that follow. **No balanced books, no board**: papers with incomplete evidence are named and removed from the board, and enter no aggregate. Past issues stay as published; reversals take effect through this notice.
