@@ -1,5 +1,7 @@
 # amber-stepfun
 
+> ⚠️ **Correction (2026-10-02)**: the papers below were answered by a candidate that stepped outside its paper and touched grading material; they count neither as a pass nor as a fail. step-5-preview @ stepfun plan endpoint: 1 paper (A-61f7ad01) now NA, board score 16'/24 → **15'/24**. The cause was an isolation defect in our exam setup; the fault is ours. The rest of this page stays as published; where they differ, the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.en.md) governs.
+
 > Week correction: full test in W38; publication and convergence make-up in W39. The combined score stays 16'/24. [Correction](results/2026-W38-correction-20260923.en.md). Existing held-case notices remain in force.
 
 ' = contested (held for safety refusal) or invalid (infrastructure-related (test harness or scoring environment) cases: held, void or awaiting re-scoring); neither counts as a win or a loss. Every lane with NA carries an apostrophe, including frozen display rows; a hold does not settle the cause. StepFun: 4 held cells, not wins or losses.
