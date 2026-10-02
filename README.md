@@ -1,5 +1,7 @@
 # amber-stepfun
 
+> ⚠️ **更正（2026-10-02，另一项）**：防御轴的一案 A-d511f9e8 在所有车道上改记 NA（考场判的不是考生交付的文件，判分还要求了题面没写的事）。分母不变，**过案数不变**，每条道的总分都带 `'`。本仓各期成绩表里这一格请按 NA 读，其余内容保留原样，以[更正声明](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02-a-d511f9e8.md)为准。
+
 > ⚠️ **更正（2026-10-02）**：以下考卷在作答时越出考卷、接触了判分材料，不计胜负。step-5-preview @ stepfun plan 端点 有 1 张卷（A-61f7ad01）改记 NA，榜上成绩 16'/24 → **15'/24**。原因是考场隔离缺陷，责任在我们。本页其余内容保留原样，以[更正声明](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.md)为准。
 
 > 周次更正：全库考试在 W38，发文与收敛补测在 W39，组合成绩仍为 16'/24。见 [更正](results/2026-W38-correction-20260923.md)。已有挂起标记不因本次改周解除。
