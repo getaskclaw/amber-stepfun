@@ -62,7 +62,7 @@ This repo measures StepFun's official **plan endpoint** (OpenAI-compatible) serv
 Three extra disclosures therefore ride with the scores:
 
 1. **Reasoning burn cannot be checked.** The endpoint's usage payload **does not report `reasoning_tokens`**, so "high" is only a request label — the run actually used the endpoint's default thinking budget. No same-band comparison is offered against other repos; the band column is honestly marked "requested, unverifiable".
-2. **Vision face: endpoint incident.** Before launch, vision requests hung on this endpoint with zero bytes (a different model on the same endpoint answered the same image correctly in 6.8s). That case was first recorded `not run` (not a failure); after the endpoint recovered it was re-taken and the real value recorded. Both the incident and the makeup are written into Findings.
+2. **Vision face: endpoint incident.** Before launch, vision requests hung on this endpoint with zero bytes (a different model on the same endpoint, step-3.7-flash, answered the same image correctly in 6.8s). That case was first recorded `not run` (not a failure); after the endpoint recovered it was re-taken and the real value recorded. Both the incident and the makeup are written into Findings.
 3. **Extended wall-clock caps.** The three verify cases only settled after the runner's time caps were doubled (7200/10800/3600 s), so the whole-issue wall clock runs heavy — carry this caveat when comparing wall time across repos.
 
 ## W41 in one minute
